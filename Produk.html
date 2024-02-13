@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Produk.css">
+    <title>Produk Kami</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">SERBA ADA</div>
+            <div id="hamburger" style="cursor: pointer; font-size: 30px;">
+            =</div>
+            <ul class="nav-list hidden" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="beranda.html">Beranda</a></li>
+                <li><a href="Produk.html">Produk</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Produk Serba Ada</h2>
+    <p>Segera Di Checkout Sekarang Juga!</p>
+
+    <table style="width:100%">
+        <tr>
+            <th>Gambar</th>
+            <th>Jenis Produk</th>
+            <th>Merek</th>
+            <th>Harga</th>
+            <th>Checkout</th>
+        </tr>
+        <tr>
+            <td><img src="img/rolex.jpeg" alt="" width="150px" height="150px"></td>
+            <td>Jam tangan Pria LED Original</td>
+            <td>Rolex</td>
+            <td>Rp.40.000.000</td>
+            <td class="price">Checkout
+                <div class="dropdown-price"><button onclick="beli()">Beli Sekarang</div></button>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="img/jordan.jpg" alt="" width="150px" height="150px"></td>
+            <td>Sepatu Pria Dan Perempuan</td>
+            <td>NikeJordan 1 Hight Black White</td>
+            <td>Rp.8.000.000</td>
+            <td class="price">Checkout
+                <div class="dropdown-price"><button onclick="beli()">Beli Sekarang</div></button>
+            </td>
+
+        </tr>
+        <tr>
+            <td><img src="img/kaos.jpg" alt="" width="150px" height="150px"></td>
+            <td>Kaos Pria Dan Perempuan</td>
+            <td>Erigo T-shirt Gracia Jkt48 X Senikanji Olive</td>
+            <td>Rp.350.000</td>
+            <td class="price">Checkout
+                <div class="dropdown-price"><button onclick="beli()">Beli Sekarang</div></button>
+            </td>
+        </tr>
+        <tr>
+            <td><img src="img/kaos shani.jpeg" alt="" width="150px" height="150px"></td>
+            <td>Kaos Pria Dan Perempuan</td>
+            <td>Erigo T-shirt Shani Jkt48 Black</td>
+            <td>Rp.250.000</td>
+            <td class="price">Checkout
+                <div class="dropdown-price"><button onclick="beli()">Beli Sekarang</div></button>
+
+            </td>
+        </tr>
+    </table>
+
+
+
+    <footer>
+        <p>&copy; SERBA ADA 2024.</p>
+    </footer>
+
+    <script>
+        function beli() {
+            alert('Pesanan Di Terima')
+            window.location.href = 'index.html'
+        }
+
+        const Hamburger = document.getElementById('hamburger')
+        const Menu = document.getElementById('menu')
+
+        Hamburger.addEventListener('click', () => {
+            Menu.classList.toggle('hidden')
+        })
+    </script>
+</body>
+
+</html>
